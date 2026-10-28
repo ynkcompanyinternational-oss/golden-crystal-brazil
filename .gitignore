@@ -19,7 +19,3 @@ node_modules/
 .DS_Store
 
 # Documentos reservados para revisão
-documentos/
-assets/certificado-*.png
-assets/a_high_resolution_realistic_certificate_document*
-concessao-*.html
