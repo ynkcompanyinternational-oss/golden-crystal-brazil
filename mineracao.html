@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mineração | Golden Crystal Brazil</title>
+<link rel="stylesheet" href="golden.css">
+
+<style>
+* { box-sizing:border-box; }
+
+body {
+  margin:0;
+  font-family:Georgia,serif;
+  color:#111;
+  background:#f5f1e9 url('assets/fundo-padrao.png')
+    center center/cover fixed no-repeat;
+}
+
+main {
+  max-width:900px;
+  margin:auto;
+  padding:16px 18px 60px;
+}
+
+.voltar {
+  color:#101010;
+  font-weight:900;
+  text-decoration:none;
+}
+
+.cabecalho-mineracao {
+  text-align:center;
+  margin:10px auto 30px;
+}
+
+.cabecalho-mineracao .logo {
+  display:block;
+  width:150px;
+  max-width:50%;
+  margin:5px auto;
+}
+
+.cabecalho-mineracao h1 {
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:26px;
+  font-weight:600;
+  color:#95600a;
+  margin:12px 0;
+}
+
+.concessoes {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:36px;
+  margin:30px auto;
+}
+
+.concessoes .concessao {
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  padding:0 !important;
+  margin:0 !important;
+  text-align:center;
+}
+
+.concessao img {
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:420px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.concessao h2 {
+  font-family:Georgia,serif;
+  color:#080808 !important;
+  font-size:21px;
+  font-weight:500 !important;
+  letter-spacing:.3px;
+  line-height:1.4;
+  text-shadow:0 1px 1px rgba(255,255,255,.6);
+  margin:22px 0;
+}
+
+.botao-concessao {
+  display:inline-block;
+  background:#080808 !important;
+  color:#fff !important;
+  border:1px solid #d5ad53 !important;
+  border-radius:9px;
+  padding:12px 25px;
+  font-family:Georgia,serif;
+  font-size:16px;
+  font-weight:500;
+  text-decoration:none;
+  box-shadow:
+    inset 0 0 0 1px #f0d889,
+    0 2px 8px rgba(0,0,0,.2);
+}
+
+.imagem-reserva {
+  display:grid;
+  place-items:center;
+  min-height:250px;
+  background:transparent !important;
+  border:1px dashed #b99a5b;
+  border-radius:10px;
+  color:#333;
+  font-family:Georgia,serif;
+}
+
+@media(max-width:600px) {
+  .concessoes {
+    grid-template-columns:1fr;
+    gap:42px;
+  }
+
+  .concessao img {
+    max-height:none;
+  }
+
+  .concessao h2 {
+    font-size:22px;
+  }
+}
+
+/* TÍTULOS REFINADOS EM PRETO */
+.cabecalho-mineracao h1,
+body main .concessoes .concessao h2 {
+    color:#080808 !important;
+    font-family:Georgia,serif !important;
+    font-weight:400 !important;
+    letter-spacing:0.4px !important;
+    text-shadow:none !important;
+}
+
+
+/* TITULOS PRETOS - MINERACAO */
+html body main .cabecalho-mineracao h1,
+html body main .concessoes .concessao h2 {
+    color:#050505 !important;
+    font-family:Georgia,serif !important;
+    font-weight:400 !important;
+    text-shadow:none !important;
+}
+
+
+/* TITULOS DEFINITIVOS EM PRETO */
+.titulo-preto-principal,
+.titulo-preto-mineral {
+    color:#000000 !important;
+    -webkit-text-fill-color:#000000 !important;
+    font-family:Georgia,serif !important;
+    font-weight:400 !important;
+    text-shadow:none !important;
+    background:none !important;
+    letter-spacing:0.3px;
+    line-height:1.35;
+    text-align:center;
+}
+
+.titulo-preto-principal {
+    font-size:26px;
+    margin:18px auto 28px;
+}
+
+.titulo-preto-mineral {
+    font-size:22px;
+    margin:22px 0;
+}
+
+</style>
+
+<link rel="icon" type="image/png" href="assets/logo-institucional.png?v=2">
+</head>
+<body>
+<main>
+<a class="voltar" href="menu.html">← Voltar</a>
+
+
+<header class="cabecalho-mineracao">
+  <img class="logo"
+       src="assets/logo-institucional.png"
+       alt="Golden Crystal Brazil">
+  <div class="titulo-preto-principal">Concessão de Mineração Golden Cristal</div>
+</header>
+
+
+<section class="concessoes">
+  <article class="concessao">
+    <img src="assets/mineracao-ouro-1.png?v=20261028" alt="Concessão de Mineração de Ouro">
+    <div class="titulo-preto-mineral">Concessão de Mineração de Ouro</div>
+    <a class="botao-concessao" href="concessao-ouro.html">Ver Concessão</a>
+  </article>
+
+  <article class="concessao">
+    <img src="assets/mineracao-imagem-2.png?v=3" alt="Operação de mineração">
+    <div class="titulo-preto-mineral">Concessão de Mineração de Esmeralda</div>
+    <a class="botao-concessao" href="concessao-esmeralda.html">Ver Concessão</a>
+  </article>
+
+  <article class="concessao">
+    <img src="assets/mineracao-imagem-3.png?v=3" alt="Operação de mineração">
+    <div class="titulo-preto-mineral">Concessão de Mineração de Cobre</div>
+    <a class="botao-concessao" href="concessao-cobre.html">Ver Concessão</a>
+  </article>
+</section>
+</main>
+</body>
+</html>

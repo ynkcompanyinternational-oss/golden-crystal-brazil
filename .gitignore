@@ -1,0 +1,25 @@
+# Backups
+*.bak
+*.bak-*
+*.zip
+
+# Arquivos privados
+.env
+.env.*
+*.key
+*.pem
+*.log
+*.sqlite
+*.db
+
+# Arquivos temporários
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+
+# Documentos reservados para revisão
+documentos/
+assets/certificado-*.png
+assets/a_high_resolution_realistic_certificate_document*
+concessao-*.html

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Negociações | Golden Crystal Brazil</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Georgia,serif;
+ color:#111;
+ background:#f5f1e9 url('assets/fundo-padrao.png')
+ center center/cover fixed no-repeat;
+}
+main{max-width:900px;margin:auto;padding:16px 18px 60px}
+.voltar{color:#101010;font-weight:900;text-decoration:none}
+.logo{display:block;width:150px;max-width:50%;margin:5px auto}
+h1{text-align:center;font-size:26px;color:#95600a}
+.intro{text-align:center;font-weight:600;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:30px}
+.card-documento{
+ background:rgba(255,255,255,.72);
+ border:1px solid #cba750;
+ border-radius:15px;
+ padding:24px 12px;
+ text-align:center;
+ box-shadow:0 5px 15px #00000018;
+}
+.empresa{color:#91610b;font-weight:900;font-size:15px}
+h2{font-size:17px;line-height:1.4;min-height:65px}
+.botao{
+ display:inline-block;
+ padding:12px 10px;
+ border-radius:8px;
+ background:linear-gradient(135deg,#93600b,#ffdf7b,#b17a13);
+ color:#17110a;
+ font-weight:900;
+ font-size:12px;
+ text-decoration:none;
+}
+.pendente{font-size:12px;color:#555;font-weight:bold}
+.nota{margin-top:30px;font-size:13px;text-align:center;line-height:1.6}
+@media(max-width:400px){
+ .grid{grid-template-columns:1fr}
+}
+</style>
+<link rel="icon" type="image/png" href="assets/logo-institucional.png?v=2">
+</head>
+<body>
+<main>
+<a class="voltar" href="menu.html">← Voltar</a>
+<img class="logo" src="assets/logo-institucional.png" alt="Golden Crystal Brazil">
+<h1>Negociações Internacionais</h1>
+<p class="intro">Documentação de transporte, refino, custódia e operações internacionais.</p>
+<div class="grid">
+    <article class="card-documento">
+      <div class="empresa">BRINK&#x27;S</div>
+      <h2>Transporte Internacional de Ouro</h2>
+      <a class="pendente" href="documentos/brinks-transporte.pdf" target="_blank" rel="noopener">VISUALIZAR DOCUMENTO</a>
+    </article>
+    
+    <article class="card-documento">
+      <div class="empresa">VALCAMBI SUISSE</div>
+      <h2>Refino Internacional de Ouro</h2>
+      <a class="pendente" href="documentos/valcambi-refino.pdf" target="_blank" rel="noopener">VISUALIZAR DOCUMENTO</a>
+    </article>
+    
+    <article class="card-documento">
+      <div class="empresa">BRINK&#x27;S SWITZERLAND</div>
+      <h2>Transporte e Custódia Internacional</h2>
+      <a class="pendente" href="documentos/brinks-custodia.pdf" target="_blank" rel="noopener">VISUALIZAR DOCUMENTO</a>
+    </article>
+    
+    <article class="card-documento">
+      <div class="empresa">DEUTSCHE BANK</div>
+      <h2>Safe Keeping Receipt — SKR</h2>
+      <a class="pendente" href="documentos/deutsche-skr.pdf" target="_blank" rel="noopener">VISUALIZAR DOCUMENTO</a>
+    </article>
+    
+    <article class="card-documento">
+      <div class="empresa">DEUTSCHE BANK</div>
+      <h2>Ready, Willing and Able — RWA</h2>
+      <a class="pendente" href="documentos/deutsche-rwa.pdf" target="_blank" rel="noopener">VISUALIZAR DOCUMENTO</a>
+    </article>
+    </div>
+<p class="nota">Documentação apresentada para consulta informativa, sem verificação independente de autenticidade. Somente versões públicas com dados pessoais protegidos serão disponibilizadas.</p>
+</main>
+</body>
+</html>

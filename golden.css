@@ -1,0 +1,239 @@
+
+* {box-sizing:border-box}
+body {
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:radial-gradient(circle,#fff 20%,#f0eee8 100%);
+ color:#956915;
+}
+a {text-decoration:none}
+main {
+ max-width:1100px;
+ min-height:100dvh;
+ margin:auto;
+ padding:25px 16px 45px;
+}
+header {
+ text-align:center;
+ margin:25px auto 35px;
+}
+h1 {
+ font-weight:500;
+ font-size:clamp(25px,5vw,40px);
+ background:linear-gradient(120deg,#805010,#e5b65a,#fff0b2,#a36e12);
+ color:transparent;
+ background-clip:text;
+ -webkit-background-clip:text;
+}
+header p {letter-spacing:4px;color:#a68d60}
+.grid {
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:15px;
+}
+.card {
+ min-height:165px;
+ padding:15px 8px;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ gap:12px;
+ text-align:center;
+ color:#956915;
+ background:linear-gradient(145deg,#fff,#faf7ef);
+ border:1px solid #d5b875;
+ border-radius:17px;
+ box-shadow:0 6px 18px #97742b25;
+ font-weight:600;
+ font-size:14px;
+ transition:transform .2s;
+}
+.card:hover {transform:translateY(-3px)}
+.card:active {transform:scale(.97)}
+.icone {width:78px;height:78px}
+svg {
+ width:100%;
+ height:100%;
+ filter:drop-shadow(2px 3px 2px #8b602f65);
+}
+.mini {
+ width:100%;
+ height:100%;
+ object-fit:contain;
+}
+.voltar {
+ display:inline-block;
+ color:#a47722;
+ margin-bottom:20px;
+}
+.conteudo {
+ max-width:800px;
+ margin:45px auto;
+ text-align:center;
+}
+.conteudo .icone {
+ width:110px;
+ height:110px;
+ margin:auto;
+}
+.conteudo p {color:#777;line-height:1.7}
+@media(min-width:750px) {
+ .grid {grid-template-columns:repeat(4,minmax(0,1fr))}
+ .card {min-height:210px;font-size:16px}
+}
+
+
+/* LOGO INSTITUCIONAL MAIOR */
+.grid > .card:first-child .icone {
+    width: 130px;
+    max-width: 100%;
+    height: 115px;
+}
+
+.grid > .card:first-child .mini {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.grid > .card:first-child {
+    min-height: 185px;
+}
+/* FIM LOGO INSTITUCIONAL */
+
+
+/* FUNDO PADRAO GOLDEN CRYSTAL */
+body {
+    background-image: url("assets/fundo-padrao.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+/* TITULOS E VOLTAR - OURO METALIZADO */
+body:not(.capa) h1,
+body:not(.capa) h2,
+body:not(.capa) .subtitulo,
+body:not(.capa) .voltar,
+body:not(.capa) a[href="index.html"] {
+  color: #d4a632 !important;
+  background-image: linear-gradient(180deg,
+    #fff4ba 0%,
+    #ffd65a 22%,
+    #b77a0d 43%,
+    #fff0a0 55%,
+    #d49a1c 76%,
+    #80500b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: 900 !important;
+  text-shadow: 0 2px 3px rgba(70,40,0,.16);
+  filter: drop-shadow(0 1px 2px rgba(70,40,0,.45));
+}
+
+/* AJUSTE FINAL DO TOPO DO MENU */
+.logo-topo-gcb {
+  display: block;
+  width: 165px;
+  max-width: 45vw;
+  height: auto;
+  margin: 12px auto 18px;
+  object-fit: contain;
+}
+body .voltar,
+body a[href="index.html"] {
+  background: none !important;
+  background-image: none !important;
+  -webkit-text-fill-color: #101010 !important;
+  color: #101010 !important;
+  font-weight: 900 !important;
+  text-shadow: 0 1px 1px rgba(255,255,255,.85) !important;
+  filter: none !important;
+}
+
+/* ESPACAMENTO COMPACTO DO TOPO */
+.logo-topo-gcb {
+  margin-top: 2px !important;
+  margin-bottom: 4px !important;
+}
+
+.voltar,
+a[href="index.html"] {
+  margin-top: 2px !important;
+  margin-bottom: 4px !important;
+}
+
+.subtitulo {
+  margin-top: 2px !important;
+  margin-bottom: 8px !important;
+}
+
+
+/* MAPA-MUNDI NEGOCIACOES AMPLIADO */
+a[href="negociacoes.html"] .icone {
+  overflow: visible !important;
+}
+a[href="negociacoes.html"] .icone img {
+  width: 175% !important;
+  max-width: none !important;
+  height: 175% !important;
+  object-fit: contain !important;
+  transform: scale(1.15);
+  transform-origin: center;
+}
+
+/* MAPA NEGOCIACOES - AMPLIACAO EXTRA */
+a[href="negociacoes.html"] .icone img {
+  width: 260% !important;
+  height: 260% !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  transform: translate(-31%, -31%) !important;
+}
+
+/* ÍCONE MINERAÇÃO AMPLIADO */
+a[href="mineracao.html"] .icone {
+  overflow: visible !important;
+}
+
+a[href="mineracao.html"] .icone img {
+  transform: scale(2.0) !important;
+  transform-origin: center !important;
+}
+
+
+/* MINERAÇÃO - AMPLIAÇÃO DEFINITIVA */
+a[href="mineracao.html"] .icone {
+    overflow: visible !important;
+    position: relative !important;
+}
+
+a[href="mineracao.html"] .icone img {
+    width: 300% !important;
+    height: 300% !important;
+    max-width: none !important;
+    object-fit: contain !important;
+    transform: translate(-33.33%, -33.33%) !important;
+}
+
+
+/* MINERAÇÃO - TAMANHO CORRIGIDO */
+a[href="mineracao.html"] .icone {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+}
+
+a[href="mineracao.html"] .icone img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    transform: none !important;
+}
